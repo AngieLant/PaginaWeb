@@ -1,0 +1,31 @@
+@import '../base/mapas';
+@import '../base/mixins';
+
+.imag-container{
+    display: map-get($display, display-flex);
+    justify-content: map-get($justify, justify-center);
+    width: 100%;
+}
+.img-ppal{
+    @include tamaño(100%);
+    
+}
+.imag{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.imag{
+    img{
+        @include tamaño(25%);
+    }
+}
+.text{
+    font-family: $fuente-2;
+    color: $color-txt;
+}
+.text-container{
+    max-width: 620px;
+    margin: 76px auto 75px;
+}

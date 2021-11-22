@@ -1,0 +1,14 @@
+@import '../base/variables';
+@import '../base/lista';
+
+#footer{
+    background-color: nth($colores,1);
+    width: 100%;
+    h2{
+        color: $h2-color-footer;
+    }
+    li{
+        color: #fff;
+        list-style-type: none;
+    }
+}

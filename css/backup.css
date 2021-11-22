@@ -1,0 +1,264 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.body{
+    background-color: #f5f5f3;
+}
+header{
+    padding: 0px;
+}
+.nav-bg{
+    background-color: #f5f5f3;
+}
+.navbar-toggler{
+    background-color: red;
+}
+.margin{
+    margin: 0 10px;
+}
+.titulo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+   /* position: relative;
+    top: 30px;
+    left: 2px;*/
+    justify-content: space-between;
+    margin-right: 100px;
+}
+h3,h2{
+    font-family: 'Raleway', sans-serif;
+}
+.boton-nav1{
+    background-color: #1c1c1c;
+    height: 70px;
+    width: 395px;
+    text-align: left;
+    padding-left: 45px;
+    border: none;
+}
+.boton-nav {
+    background-color:#000;
+    position: absolute;
+    top: 30px;
+    right: 2px;
+    border-radius: 5px;
+    position: fixed;
+    padding: 10px 20px;
+}
+.btn-txt{
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
+}
+#texto-boton{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+
+}
+#texto-boton:hover{
+    font-weight: bold;
+}
+
+.nav-container{
+    display: flex;
+    margin: 10px;
+    /*justify-content:space-between;
+    align-items:center;*/
+    justify-content:center ;
+}
+.nav{
+    display: flex;
+    margin: 0px;
+    justify-content:space-around;
+    align-items:center;
+    margin: 10px;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+/*Items de la lista*/
+/*header nav ul li{
+   /* list-style-type: circle;*/
+/*   display: block;
+   margin: 5px;
+   display: inline-block;
+   position: relative;
+}*/
+header nav ul li{
+    list-style: none;
+    padding: 2px 0;
+    margin-right: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+    padding: 10px;
+   
+}
+header nav ul li a:hover{
+    font-weight: bold;
+}
+/*Items de la lista*/
+
+/*Subitem*/
+header nav ul ul li{
+    display: block;
+}
+
+header nav ul ul{
+    position: absolute;
+    display: none;
+}
+header nav ul li:hover ul{
+    display: block;
+}
+/*Subitem*/
+
+/*Imagenes decoracion*/
+
+.img-ppal{
+    width: 100%;
+}
+.imag img{
+    width: 25%;
+}
+.imag-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.imag{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Footer*/
+
+#footer{
+    background-color: #000;
+    width: 100%;
+    
+}
+#footer h2{
+    color: #fff;
+}
+#footer li{
+    color: #fff;
+    list-style-type: none;
+}
+/* Footer*/
+.proceso-container{
+    display: grid;
+    grid-template-rows: repeat(2,500px);
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    /*justify-items: center;
+    /*grid-template-areas: 
+    'foto1 foto2 foto2 foto3'
+    'foto2 foto2 foto3 foto3';
+    justify-items: center;*/
+
+}
+/*'foto1 foto1 foto1 foto1'
+    'foto2 foto2 foto3 foto3'
+    'foto2 foto2 foto3 foto3'
+    'foto2 foto3 foto3 foto3'*/
+/*.proceso-container img{
+    width: 40%;
+}*/
+.deco2{
+    width: 50%;
+    object-fit: cover;
+}
+.deco1{
+    width: 10%;
+    object-fit: cover;
+    text-align: center;
+    
+}
+.deco3{
+    width: 20%;
+}
+.deco2-container{
+    width: 20%;
+    margin: auto;
+}
+/*.grid-item{
+   /* border: 2px solid black;
+    margin-bottom: 10px;
+   /* width: 30%;*/
+    /*justify-self: stretch;*/
+/*}*/
+
+.grid-item:first-child{
+    /*border: 2px solid black;*/
+    grid-column: 1/4;
+    grid-row: 1/2;
+    /*width: 30%;*/
+   /* grid-area: foto1;*/
+    /*background: url(img/deco2.jfif);*/
+    /*justify-items: end;*/
+    
+}
+.grid-item:nth-child(2){
+    grid-column: 1/2;
+    margin-left: 10px;
+    /*grid-area: foto2;*/
+}
+.grid-item:nth-child(3){
+    grid-column: 3/4;
+
+}
+
+/*Bootstrap*/ 
+.navbar-nav{
+    margin-right: 20px;
+}
+.navbar-toggler{
+    margin-right: 15px;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.m-top{
+    margin-top: 20px;
+}
+.deco1,.deco2,.deco3{
+    margin-top: 25px;
+    transition: 2s all;
+}
+.text-container{
+    max-width: 620px;
+    margin: 76px auto 75px;
+    /*margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 40px;*/
+}
+.text{
+    font-family: Fatum, Arial, Helvetica, sans-serif;
+    color: rgba(28,28,28,.6);
+}
+.deco1:hover{
+    transform: translate(20px,20px);
+}
+.deco2:hover{
+    transform: translate(20px,20px);
+}
+.deco3:hover{
+    transform: translate(20px,20px);
+}
+.margin{
+    margin: auto;
+}
+
+@media screen and (max-width:995px){
+    .boton-nav1{
+        display: none;
+        position: absolute;
+    }
+}

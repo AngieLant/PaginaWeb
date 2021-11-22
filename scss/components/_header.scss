@@ -1,0 +1,22 @@
+@import '../base/variables';
+
+.titulo{
+    font-family: $fuente-1;
+    font-size: 2em;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+h3,h2{
+    font-family: $fuente-1;
+}
+.body{
+    background-color: $color-body;
+}
+.nav-bg{
+    background-color: $color-body;
+}
+.title-dikka{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}

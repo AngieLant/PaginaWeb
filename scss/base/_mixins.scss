@@ -1,0 +1,15 @@
+@mixin prefijos($propiedad) {
+    -webkit-transform:$propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform: $propiedad;
+}
+@mixin tamaño($ancho) {
+    width: $ancho;
+}
+@mixin no-filter($propiedad) {
+    -webkit-transform:$propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    filter: $propiedad;
+}

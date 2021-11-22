@@ -1,0 +1,29 @@
+@import '../base/extends';
+@import '../base/mixins';
+
+.deco1{
+    @extend %margin-transition;
+    @extend %filter;
+    &:hover{
+        @include prefijos(translate(20px,20px));
+        @include no-filter(grayscale(0%));
+    }
+}
+.deco2{
+    @extend %margin-transition;
+    @extend %filter;
+    &:hover{
+        /*@extend %translate;*/
+        @include prefijos(translate(20px,20px));
+        @include no-filter(grayscale(0%));
+    }
+}
+.deco3{
+    @extend %margin-transition;
+    @extend %filter;
+    &:hover{
+        /*@extend %translate;*/
+        @include prefijos(translate(20px,20px));
+        @include no-filter(grayscale(0%));
+    }
+}

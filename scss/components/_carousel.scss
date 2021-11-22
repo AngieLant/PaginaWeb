@@ -1,0 +1,8 @@
+@import '../base/mapas';
+.margin{
+    margin: 0 10px;
+}
+.carousel-inner{
+    display: map-get($display,display-flex);
+    justify-content: map-get($justify, justify-around);
+}

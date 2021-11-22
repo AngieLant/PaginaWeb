@@ -1,0 +1,31 @@
+@import '../base/lista';
+@import '../base/variables';
+@import '../base/mapas';
+
+.boton-nav1{
+    background-color: nth($colores,1);
+    height: 70px;
+    width: 395px;
+    text-align: left;
+    padding-left: 45px;
+    border: none;
+    text-transform: uppercase;
+    
+    &:hover{
+        background-color: darken(nth($colores,1),80%);
+    }
+}
+.btn-txt{
+    color: nth($colores,3);
+    font-family:$fuente-1;
+    /*font: 10px "Fatum", "Arial", "Helvetica" ,sans-serif;*/
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 10px;
+    letter-spacing: 4px;
+   
+}
+#texto-boton{
+    color: nth($colores,3);
+    font-family: $fuente-1;
+}
