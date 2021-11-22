@@ -14,7 +14,12 @@
     &:hover{
         background-color: darken(nth($colores,1),80%);
     }
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:900px) {
+        display: none;
+    }
+}
+.nav-item{
+    @media screen and (max-width:900px) {
         display: none;
     }
 }
