@@ -23,8 +23,12 @@ h3, h2 {
   background-color: #f5f5f3;
 }
 
-.nav-bg {
+.nav-bg-index {
   background-color: #f5f5f3;
+}
+
+.nav-bg-proy {
+  background-color: #1c1c1c;
 }
 
 .title-dikka {
@@ -68,12 +72,6 @@ h3, h2 {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .nav-item {
-    display: none;
-  }
-}
-
 .btn-txt {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -113,10 +111,9 @@ h3, h2 {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .nav-item {
-    display: none;
-  }
+.navbar-toggler-icon {
+  background-color: #fff;
+  border-radius: 6px;
 }
 
 .deco3, .deco2, .deco1 {
