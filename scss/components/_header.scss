@@ -31,3 +31,17 @@ h3,h2{
     margin-top: 10px;
     color: #fff;
 }
+/*Procesos*/
+.text-procesos{
+    color: #fff;
+}
+.text-parrafo{
+    color: #fff;
+}
+li{
+    a{
+        &:hover{
+            text-decoration: white;
+        }
+    }
+}
