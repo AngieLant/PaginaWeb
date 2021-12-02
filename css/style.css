@@ -126,7 +126,7 @@ li a:hover {
 
 .navbar-toggler-icon {
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 7px;
 }
 
 .deco3, .deco2, .deco1 {
@@ -229,7 +229,6 @@ li a:hover {
 
 #footer {
   background-color: #1c1c1c;
-  width: 100%;
 }
 #footer h2 {
   color: #fff;
@@ -249,6 +248,144 @@ li a:hover {
 #footer-proceso li {
   color: #000;
   list-style-type: none;
+}
+
+/*Index*/
+.main-footer {
+  background: #1c1c1c;
+  color: #fff;
+  padding: 30px 20px;
+}
+@media screen and (min-width: 1024px) {
+  .main-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}
+.main-footer .footer__title {
+  border-bottom: 1px dotted #555;
+  padding-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.main-footer .footer__txt {
+  color: #555;
+  font-family: Fatum, Arial, Helvetica, sans-serif;
+}
+.main-footer .footer__link {
+  color: #555;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  font-family: Fatum, Arial, Helvetica, sans-serif;
+}
+.main-footer .footer__input {
+  background: #1c1c1c;
+  width: 100%;
+  display: block;
+  padding: 20px;
+  border: 1px solid #555;
+}
+.main-footer .copy {
+  color: #555;
+}
+@media screen and (min-width: 1024px) {
+  .main-footer .copy {
+    grid-column-start: span 4;
+    text-align: center;
+  }
+}
+
+.social-media {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.social-media-icon {
+  /*Iconos. Hace un borde circular */
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  /*Grosor y color al borde del circulo*/
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+.social-media-icon:hover i {
+  color: #fff;
+}
+.social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
+}
+.social-media-icon i:hover {
+  color: white;
+}
+
+/*Proyecto*/
+.main-footer-proy {
+  background: #f5f5f3;
+  color: #000;
+  padding: 30px 20px;
+}
+@media screen and (min-width: 1024px) {
+  .main-footer-proy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}
+.main-footer-proy .footer__title {
+  border-bottom: 1px dotted #555;
+  padding-bottom: 20px;
+}
+.main-footer-proy .footer__txt {
+  color: #555;
+}
+.main-footer-proy .footer__link {
+  color: #555;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+.main-footer-proy .footer__input {
+  background: #1c1c1c;
+  width: 100%;
+  display: block;
+  padding: 20px;
+  border: 1px solid #555;
+}
+.main-footer-proy .copy {
+  color: #555;
+}
+@media screen and (min-width: 1024px) {
+  .main-footer-proy .copy {
+    grid-column-start: span 4;
+    text-align: center;
+  }
+}
+.main-footer-proy .social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  color: #000;
+}
+.main-footer-proy .social-media-icon:hover i {
+  color: #000;
+}
+.main-footer-proy .social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
+}
+.main-footer-proy .social-media-icon i:hover {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

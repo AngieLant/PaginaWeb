@@ -3,7 +3,7 @@
 
 #footer{
     background-color: nth($colores,1);
-    width: 100%;
+
     h2{
         color: $h2-color-footer;
     }
@@ -23,4 +23,137 @@
         list-style-type: none;
     }
 }
+/*Index*/
+.main-footer{
+    background: nth($colores,1);
+    color: #fff;
+    padding: 30px 20px;
+    @media screen and (min-width:1024px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
 
+  .footer__title{
+    border-bottom: 1px dotted $color-footer-txt;
+    padding-bottom: 20px;
+    font-family: $fuente-1;
+  }
+  .footer__txt {
+    color: $color-footer-txt;
+    font-family: $fuente-2;
+  }
+  .footer__link{
+    color: $color-footer-txt;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    font-family: $fuente-2;
+  }
+  
+  .footer__input{
+    background: nth($colores, 1);
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 1px solid $color-footer-txt;
+  }
+  .copy {
+    color: #555;
+    @media screen and (min-width:1024px) {
+        grid-column-start: span 4;
+        text-align: center;
+    }
+  }
+}
+.social-media{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.social-media-icon{ /*Iconos. Hace un borde circular */
+	display: inline-block;
+	margin-left: 20px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #fff; /*Grosor y color al borde del circulo*/
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+    &:hover{
+        i{
+            color: #fff;
+        }
+    }
+    i{
+        font-size: 30px;
+	    line-height: 60px;
+        &:hover{
+            color: white;
+        }
+    }
+
+}
+/*Proyecto*/
+.main-footer-proy{
+    background: $color-body;
+    color: #000;
+    padding: 30px 20px;
+    @media screen and (min-width:1024px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+  .footer__title{
+    border-bottom: 1px dotted $color-footer-txt;
+    padding-bottom: 20px;
+  }
+  .footer__txt {
+    color: $color-footer-txt;
+  }
+  .footer__link{
+    color: $color-footer-txt;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .footer__input{
+    background: nth($colores,1);
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 1px solid $color-footer-txt;
+  }
+  .copy {
+    color: $color-footer-txt;
+    @media screen and (min-width:1024px) {
+        grid-column-start: span 4;
+        text-align: center;
+    }
+  }
+  .social-media-icon{
+	display: inline-block;
+	margin-left: 20px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	text-align: center;
+	color: #000;
+    &:hover{
+        i{
+            color: #000;
+        }
+    }
+    i{
+        font-size: 30px;
+	    line-height: 60px;
+        &:hover{
+            color: #000;
+        }
+    }
+  }
+
+}
