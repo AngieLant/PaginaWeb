@@ -24,6 +24,11 @@ h3,h2{
     text-align: center;
     margin-top: 10px;
 }
+.nav-link{
+    &:hover{
+        font-weight: bold;
+    }
+}
 /*Proyectos*/
 .title-dikka-proy{
     font-size: 20px;
@@ -44,4 +49,7 @@ li{
             text-decoration: white;
         }
     }
+}
+.foto{
+    height: 100px;
 }

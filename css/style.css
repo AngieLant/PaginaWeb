@@ -37,6 +37,10 @@ h3, h2 {
   margin-top: 10px;
 }
 
+.nav-link:hover {
+  font-weight: bold;
+}
+
 /*Proyectos*/
 .title-dikka-proy {
   font-size: 20px;
@@ -56,6 +60,10 @@ h3, h2 {
 
 li a:hover {
   text-decoration: white;
+}
+
+.foto {
+  height: 100px;
 }
 
 .body-proyecto {
@@ -173,6 +181,66 @@ li a:hover {
   filter: grayscale(0%);
 }
 
+/*.card{
+    width: 50%;
+    left: 200px;
+}*/
+.c-img {
+  width: 95%;
+  max-width: 600px;
+  margin: 100px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.c-img img {
+  width: 100%;
+}
+.c-img .txt {
+  text-align: center;
+  position: absolute;
+}
+.c-img h2, .c-img p {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.line {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 2px;
+  background: red;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.texto-up {
+  color: green;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.bahia {
+  cursor: pointer;
+}
+.bahia:hover .texto-up {
+  color: #fff;
+}
+
+/*.card img{
+    cursor: pointer;
+    &:hover{
+        .texto-up{
+            color: #fff;
+            display: none;
+        }
+    }
+
+
+}*/
 /*Mapa*/
 .imag-container {
   display: flex;
@@ -203,6 +271,10 @@ li a:hover {
 .text-container {
   max-width: 620px;
   margin: 76px auto 75px;
+}
+
+.margin {
+  margin-bottom: 100px;
 }
 
 /*Mapa*/
@@ -297,9 +369,7 @@ li a:hover {
 }
 
 .social-media {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  margin-top: 15px;
 }
 
 .social-media-icon {
@@ -327,6 +397,7 @@ li a:hover {
 
 /*Proyecto*/
 .main-footer-proy {
+  margin-top: 100px;
   background: #f5f5f3;
   color: #000;
   padding: 30px 20px;
@@ -335,6 +406,7 @@ li a:hover {
   .main-footer-proy {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-gap: 20px;
   }
 }
@@ -369,7 +441,7 @@ li a:hover {
 }
 .main-footer-proy .social-media-icon {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 10px;
   width: 60px;
   height: 60px;
   border: 1px solid #000;
@@ -386,6 +458,11 @@ li a:hover {
 }
 .main-footer-proy .social-media-icon i:hover {
   color: #000;
+}
+
+.contenedor {
+  grid-row-start: 1;
+  grid-column-end: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

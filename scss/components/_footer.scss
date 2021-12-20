@@ -66,10 +66,9 @@
     }
   }
 }
+
 .social-media{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  margin-top: 15px;
 }
 .social-media-icon{ /*Iconos. Hace un borde circular */
 	display: inline-block;
@@ -96,12 +95,14 @@
 }
 /*Proyecto*/
 .main-footer-proy{
+  margin-top: 100px;
     background: $color-body;
     color: #000;
     padding: 30px 20px;
     @media screen and (min-width:1024px) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1,1fr);
         grid-gap: 20px;
     }
 
@@ -135,7 +136,7 @@
   }
   .social-media-icon{
 	display: inline-block;
-	margin-left: 20px;
+	margin-left: 10px;
 	width: 60px;
 	height: 60px;
 	border: 1px solid #000;
@@ -156,4 +157,8 @@
     }
   }
 
+}
+.contenedor{
+  grid-row-start: 1;
+  grid-column-end: 1;
 }
